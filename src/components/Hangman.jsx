@@ -1,10 +1,12 @@
 import React from 'react'
 // import './hangman.css'
-import picture from './images/tic-tac-toe.jpg'
+import picture from './images/hangman.jpg'
 import icon from './images/king.png'
+
+
 function Hangman() {
   const handlePlayClick = () => {
-    window.open('bangtan-hangman.web.app', '_blank', 'noopener,noreferrer'); // Replace 'https://example.com' with the URL you want to open in a new page
+    window.open('https://bangtan-hangman.web.app/', '_blank'); // Replace 'https://example.com' with the URL you want to open in a new page
   }
 
   return (
@@ -15,6 +17,7 @@ function Hangman() {
         <div className="new"><img className='icon' src={icon} alt="icon" />new</div>
             <h2 className="heading">
                 HANGMAN
+                
             </h2>
         </div>
         <button className='button' onClick={handlePlayClick}>PLAY</button>

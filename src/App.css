@@ -13,6 +13,7 @@ main{
   justify-content: space-around;
   /* align-items: flex-end; */
   flex-wrap: wrap;
+  margin-top: 10%;
 }
 
 .card{
@@ -62,6 +63,9 @@ img{
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.button:hover{
+  color:greenyellow
+}
 .icon{
   margin-left: 60%;
   width: 25px;
@@ -78,4 +82,96 @@ img{
 .card:hover{
   transform: scale(1.2);
   box-shadow: 5px 5px 15px rgb(206, 203, 203);
+}
+.footer{
+  position: relative;
+  bottom: 0;
+  /* top:120%; */
+  background:#2b2b2b;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.socialmedia{
+  color: #0d0808;
+  margin-bottom: 2%;
+}
+h4{
+  margin-left: 25%;
+}
+
+
+.fa{
+
+  margin: 0 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  color: #0d0808;
+  transition: 0.5s ease;
+}
+
+.facebook:hover{
+  transform: scale(1.5);
+  color: #3b5998;
+}
+.instagram:hover{
+  transform: scale(1.5);
+  color: #e1306c;
+}
+.github:hover{
+  transform: scale(1.5);
+  color: #f1f2f4;
+}
+.linkedin:hover{
+  transform: scale(1.5);
+  color: #0077b5;
+}
+.head{
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  font-size: 4rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  /* color:aqua; */
+  font-family: 'Playfair Display SC', serif;
+  background: -webkit-linear-gradient(white, #38495a);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  top:0;
+}
+#tictactoe button{
+  background-color: #e1306c;
+}
+#flames button{
+  background-color: cadetblue;
+}
+#coming button{
+  background-color: gray;
+}
+.copyrights{
+  padding: 5px;
+}
+
+@media (min-width: 680px) and (max-width: 1024px){
+  .footer{
+    position: relative;
+    flex-direction: column;
+  }
+  .head{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 680px) {
+  .footer{
+    position: relative;
+    flex-direction: column;
+  }
+  .head{
+    font-size: 2rem;
+  }
 }
